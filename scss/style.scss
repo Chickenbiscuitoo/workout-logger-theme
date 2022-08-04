@@ -1,0 +1,75 @@
+$primary-color: #725AC1;
+$dark-color: #252525;
+$light-color: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .container {
+    height: 99%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.content {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        color: $primary-color;
+        font-weight: bolder;
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        color: $dark-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.img-container {
+    flex: 2;
+    display: flex;
+
+    img {
+        width: 15rem;
+        margin: auto;
+    }
+}
+
+.btn {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1rem;
+    border: solid 0.2rem $light-color;
+    background: $primary-color;
+    color: $light-color;
+    padding: 0.8rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &:hover {
+        font-size: 1.15rem;
+    }
+}
